@@ -1,6 +1,7 @@
 # Modified to work in recent year
 
 - Add proper api.openweathermap.org app id in variables.ini
+- Fix media player to use newer webnowplaying plugin
 - Old readme below
 
 ![SysDash Screenshot](http://marcopixel.eu/img/sysDash.png "SysDash Screenshot")

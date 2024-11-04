@@ -25,40 +25,34 @@ PlayerType=Artist
 Substitute="":"#NoArtistNameText#"
 UpdateDivider=100
 
+[MeasureAlbum]
+Measure=Plugin
+Plugin=WebNowPlaying
+PlayerType=Album
+Substitute="":"#NoArtistNameText#"
+UpdateDivider=100
+
 [MeasureCover]
 Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=Cover
 DefaultPath=#@#images\nocover.png
-CoverPath=#@#images\coverWeb.png
-Substitute="":"#@#images\nocover.png"
-UpdateDivider=100
+UpdateDivider=50
 
 [MeasurePosition]
 Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=Position
-UpdateDivider=20
+UpdateDivider=10
 
 [MeasureDuration]
 Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=Duration
-UpdateDivider=20
+UpdateDivider=10
 
 [MeasureProgress]
 Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=Progress
-UpdateDivider=20
-
-[MeasureAutoHideWebNowPlaying]
-Measure=Plugin
-Plugin=WebNowPlaying
-PlayerType=Status
-IfBelowValue=1
-IfBelowAction=[!HideFadeGroup "Spectrum"][!HideFadeGroup "SongInfo"][!Log "AutoHide: WebNowPlaying was closed, hiding skin"]
-IfAboveValue=0
-IfAboveAction=[!ShowFadeGroup "Spectrum"][!ShowFadeGroup "SongInfo"][!Log "AutoHide: WebNowPlaying was opened, showing skin"]
-Disabled=(#EnableAutoHide# > 0 ? 0 : 1)
-UpdateDivider=100
+UpdateDivider=5
